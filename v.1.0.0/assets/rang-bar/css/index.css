@@ -1,0 +1,62 @@
+@font-face {
+  font-family: text-rang-user-list;
+  src: url("../font/GlueGun-GW8Z.ttf");
+}
+.friends-rang {
+  width: 100px !important;
+  height: 20px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+}
+.friends-rang * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+}
+.friends-rang .friends-icon {
+  width: 18px;
+  height: 18px;
+  float: left;
+  display: inline-block;
+  z-index: 2;
+  border: 1px solid #24251d;
+  border-radius: 50%;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-image: url("../img/img-1.png");
+  background-color: #ecebe6;
+  background-position: center;
+}
+.friends-rang .friends-bar {
+  width: 90px;
+  height: 10px;
+  float: left;
+  margin-left: -10px;
+  border: 1px solid #24251d;
+  background-color: #ecebe6;
+  border-left: none;
+  border-radius: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 50px;
+}
+.friends-rang .friends-bar .friends-icerik {
+  display: inline-block;
+  height: 10px;
+  line-height: 11px;
+  background-color: #7bae23;
+  float: left;
+  text-align: center;
+  color: #24251d;
+  letter-spacing: 1px;
+  font-family: text-rang-user-list;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.css.map */

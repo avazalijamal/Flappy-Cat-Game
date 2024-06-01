@@ -1,0 +1,120 @@
+        @charset "UTF-8";
+
+        $t:transparent;
+        $p1:'../img/img-1.png';
+        $p2:'../img/img-2.png';
+        $font:'../font/SkipLegDay.ttf';
+
+        @font-face {
+            font-family: text-rang-user-list;
+            src: url($font);
+        }
+
+
+        @mixin flex($content, $items, $direction) {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: $direction;
+            justify-content: $content;
+            align-items: $items;
+
+        }
+
+        @mixin font($f, $s, $b, $c, $ta, $i) {
+            color: $c;
+            text-indent: $i;
+            text-align: $ta;
+
+            font: {
+                family: $f;
+                size: $s;
+                weight: $b;
+            }
+        }
+
+
+
+        .friends-link {
+            background-color: $t;
+            text-decoration: none;
+
+            .friends-user {
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    user-select: none;
+                    outline: none;
+                    overflow: hidden;
+                    font-family: text-rang-user-list;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $t;
+                    box-shadow: 3px 3px 3px 3px $t;
+
+                    .friends-user-c2 {
+                        transform: rotateY(180deg);
+                        transition-delay: 0s;
+                        transition-duration: 1s;
+                        transition-property: all;
+                        transition-timing-function: ease;
+
+                    }
+
+                }
+
+                width:calc(100% - 10px);
+                height: calc(80px - 20px);
+                padding: 10px 5px 10px 5px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 6px;
+                border-radius: 2px;
+                display: grid;
+                background-size:100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: $t;
+                background-image: url($p2);
+                grid-template-columns: 50px 60px calc(100% - (50px*2.5) - 60px) 50px*1.5;
+
+                .friends-user-c1 {
+                    background-color: $t;
+                    @include flex(center, center, column);
+                    @include font(arial, 14px, bold, #f7fff0, center, none);
+                    border-right: 1px solid #288ed6;
+
+
+                }
+
+                .friends-user-c2 {
+                    @include flex(center, center, column);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: $t;
+                    border-radius: 100%;
+                    border: 2px solid #288ed6;
+                    background-image: url($p1);
+                }
+
+                .friends-user-c3 {
+                    background-color: $t;
+                    @include flex(center, flex-start, column);
+                    @include font(arial, 14px, bold, #f7fff0, left, 5px);
+                    text-shadow: 2px 2px 3px #8cb2c9;
+
+                }
+
+                .friends-user-c4 {
+                    background-color: $t;
+                    @include flex(center, flex-start, column);
+                    @include font(arial, 12px, bold, #f7fff0, center, 3px);
+                    text-shadow: 2px 2px 3px #288ed6;
+                    border-left: 2px solid #288ed6;
+
+                }
+            }
+        }

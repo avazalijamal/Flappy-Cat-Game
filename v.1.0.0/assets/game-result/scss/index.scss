@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+$t:transparent;
+$s0:'../img/img-1.png';
+$s1:'../img/img-2.png';
+$s2:'../img/img-3.png';
+$s3:'../img/img-4.png';
+$s4:'../img/img-5.png';
+$s5:'../img/img-6.png';
+$s6:'../img/img-7.png';
+$font:'../font/GlueGun-GW8Z.ttf';
+
+@font-face {
+    font-family: text-rang-user-list;
+    src: url($font);
+}
+
+.friends-result {
+
+    * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        outline: none;
+        overflow: hidden;
+    }
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #cec6c6;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .friends-result-data {
+        width: 150px;
+        height: 165px;
+
+
+        .friends-result-data-top {
+            width: 150px;
+            height: 140px;
+            padding-top: 10px;
+
+            background: {
+                size: 150px 150px;
+                repeat: no-repeat;
+                image: url($s5);
+                position: center;
+                color: #232429;
+            }
+
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            color: #405266;
+            text-indent: none;
+            text-align: center;
+            font-family: text-rang-user-list;
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-weight: bold;
+
+            .p1,
+            .p2 {
+                width: 130px;
+                height: 35px;
+                line-height: 35px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2px;
+                text-shadow: 1px 1px 1px white;
+                letter-spacing: 1px;
+
+                background: {
+                    size: 130px 35px;
+                    repeat: no-repeat;
+                    image: url($s6);
+                    position: center;
+                    color: $t;
+                }
+            }
+
+            .p3 {
+                width: 80px;
+                height: 45px;
+                padding-left: 1px;
+                line-height: 47px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2px;
+
+                background: {
+                    size: 81px 45px;
+                    repeat: no-repeat;
+                    image: url($s4);
+                    position: center;
+                    color: $t;
+                }
+
+                color: white;
+                text-indent: none;
+                text-align: center;
+                font-family: text-rang-user-list;
+                letter-spacing: 1px;
+                font-size: 18px;
+            }
+        }
+
+        .friends-result-data-bottom {
+            width: 150px;
+            height: 50px;
+            margin-left: 5px;
+            position: absolute;
+            margin-top: -20px;
+            background-color: $t;
+
+        }
+
+        .star-0 {
+
+            background: {
+                size: 150px 50px;
+                repeat: no-repeat;
+                image: url($s0);
+                color: $t;
+                position: center;
+            }
+        }
+
+        .star-1 {
+
+            background: {
+                size: 150px 50px;
+                repeat: no-repeat;
+                image: url($s1);
+                color: $t;
+                position: center;
+            }
+        }
+
+        .star-2 {
+
+            background: {
+                size: 150px 50px;
+                repeat: no-repeat;
+                image: url($s2);
+                color: $t;
+                position: center;
+            }
+        }
+
+        .star-3 {
+
+            background: {
+                size: 150px 50px;
+                repeat: no-repeat;
+                image: url($s3);
+                color: $t;
+                position: center;
+            }
+        }
+
+    }
+
+
+}

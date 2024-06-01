@@ -1,0 +1,67 @@
+/*--coin anima--*/
+@keyframes coin {
+    0% {
+        background-image: url($c1);
+    }
+
+    17% {
+        background-image: url($c2);
+    }
+
+    34% {
+        background-image: url($c3);
+    }
+
+    51% {
+        background-image: url($c4);
+    }
+
+    68% {
+        background-image: url($c5);
+    }
+
+    85% {
+        background-image: url($c6);
+    }
+
+    100% {
+        background-image: url($c7);
+    }
+
+
+
+}
+
+/*--pilot anima--*/
+@keyframes pilot-cat {
+    0% {
+        background-image: url($p1);
+    }
+
+    33% {
+        background-image: url($p2);
+    }
+
+    66% {
+        background-image: url($p3);
+    }
+
+    100% {
+        background-image: url($p4);
+    }
+
+}
+
+
+/*--cloud anima--*/
+
+@keyframes move {
+    from{
+        background-position: #{$ww} #{$z};
+    }
+
+   to {
+        background-position: -#{$ww} #{$z};
+    }
+
+}

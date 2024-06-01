@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+$t:transparent;
+$i1:'../img/img-1.png';
+$font:'../font/GlueGun-GW8Z.ttf';
+
+@font-face {
+    font-family: text-rang-user-list;
+    src: url($font);
+}
+
+.friends-rang {
+
+    * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        outline: none;
+        overflow: hidden;
+    }
+
+    width: 100px !important;
+    height: 20px !important;
+    ;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: $t;
+
+    .friends-icon {
+        width: 18px;
+        height: 18px;
+
+        float: left;
+        display: inline-block;
+        z-index: 2;
+        border: 1px solid #24251d;
+        border-radius: 50%;
+
+        background: {
+            size: 15px 15px;
+            repeat: no-repeat;
+            image: url($i1);
+            color: #ecebe6;
+            position: center;
+        }
+    }
+
+    .friends-bar {
+        width: 90px;
+        height: 20px - 5px*2;
+        float: left;
+        margin-left: -10px;
+        border: 1px solid #24251d;
+        background-color: #ecebe6;
+        border-left: none;
+        border-radius: 2px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 50px;
+
+        .friends-icerik {
+            display: inline-block;
+            height: 20px - 5px * 2;
+            line-height: 20px - 5px * 2 + 1px;
+            background-color: #7bae23;
+            float: left;
+            text-align: center;
+            color: #24251d;
+
+            letter-spacing: 1px;
+
+            font: {
+                family: text-rang-user-list;
+                size: 11px;
+                weight: bold;
+            }
+        }
+
+    }
+
+
+}

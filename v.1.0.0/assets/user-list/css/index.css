@@ -1,0 +1,106 @@
+@font-face {
+  font-family: text-rang-user-list;
+  src: url("../font/SkipLegDay.ttf");
+}
+.friends-link {
+  background-color: transparent;
+  text-decoration: none;
+}
+.friends-link .friends-user {
+  width: calc(100% - 10px);
+  height: calc(80px - 20px);
+  padding: 10px 5px 10px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
+  border-radius: 2px;
+  display: grid;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-image: url("../img/img-2.png");
+  grid-template-columns: 50px 60px calc(100% - (50px*2.5) - 60px) 75px;
+}
+.friends-link .friends-user * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+  font-family: text-rang-user-list;
+}
+.friends-link .friends-user:hover {
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 3px 3px 3px 3px transparent;
+}
+.friends-link .friends-user:hover .friends-user-c2 {
+  transform: rotateY(180deg);
+  transition-delay: 0s;
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+.friends-link .friends-user .friends-user-c1 {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7fff0;
+  text-indent: none;
+  text-align: center;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 1px solid #288ed6;
+}
+.friends-link .friends-user .friends-user-c2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #288ed6;
+  background-image: url("../img/img-1.png");
+}
+.friends-link .friends-user .friends-user-c3 {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f7fff0;
+  text-indent: 5px;
+  text-align: left;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #8cb2c9;
+}
+.friends-link .friends-user .friends-user-c4 {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f7fff0;
+  text-indent: 3px;
+  text-align: center;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #288ed6;
+  border-left: 2px solid #288ed6;
+}
+
+/*# sourceMappingURL=index.css.map */

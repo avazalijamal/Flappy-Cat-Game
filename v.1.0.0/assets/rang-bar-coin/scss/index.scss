@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+$c1:'../img/img-1.png';
+$c2:'../img/img-2.png';
+$c3:'../img/img-3.png';
+$c4:'../img/img-4.png';
+$c5:'../img/img-5.png';
+$c6:'../img/img-6.png';
+$c7:'../img/img-7.png';
+$font:'../font/GlueGun-GW8Z.ttf';
+
+@font-face {
+    font-family: text-rang-coin;
+    src: url($font);
+}
+
+@keyframes coin {
+    0% {
+        background-image: url($c1);
+    }
+
+    17% {
+        background-image: url($c2);
+    }
+
+    34% {
+        background-image: url($c3);
+    }
+
+    51% {
+        background-image: url($c4);
+    }
+
+    68% {
+        background-image: url($c5);
+    }
+
+    85% {
+        background-image: url($c6);
+    }
+
+    100% {
+        background-image: url($c7);
+    }
+
+
+
+}
+
+
+
+.friends-rang-coin {
+
+    * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        outline: none;
+        overflow: hidden;
+    }
+
+    width: 100px;
+    height:25px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+    div {
+        width: 25px;
+        height: 25px;
+
+        background: {
+            image: url($c1);
+            repeat: no-repeat;
+            size: contain;
+            position: center;
+            color: transparent;
+        }
+
+        animation: {
+            name: coin;
+            delay: 0s;
+            duration: 2s;
+            iteration-count: infinite;
+            direction: normal;
+            fill-mode: both;
+            play-state: running;
+        }
+    }
+
+    b {
+        margin-left: 3px;
+        font-family: text-rang-coin;
+        letter-spacing: 1px;
+        color: #00587a;
+    }
+
+
+}

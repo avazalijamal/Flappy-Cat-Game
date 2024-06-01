@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT PILOT</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="./js/Fon.js"></script>
+    <script src="./js/Pilot.js"></script>
+    <script src="./js/Coin.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+
+    <header class="flex">
+        <div id="heart" class="heart flex"></div>
+
+        <div class="score flex">
+            <img src="/img/score.png" alt="">
+            <b id="score"></b>
+        </div>
+    </header>
+
+    <div id="home" class="modal home flex bg-img">
+        <button id="start" class="start bg-img"></button>
+    </div>
+
+    <div id="end" class="hiddeen modal end flex bg-img">
+        <div class="content flex">
+            <div class="cart flex">
+                <h3>Game Over</h3>
+                <p>
+                    <b>Score: </b>
+                    <i id="result"></i>
+                </p>
+                <p>
+                    <b>Max: </b>
+                    <i id="max"></i>
+                </p>
+            </div>
+            <img id="star" src="/img/star-0.png" alt="" class="star">
+
+            <button id="replay" class="btn-home bg-img"></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

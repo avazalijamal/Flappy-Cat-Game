@@ -1,0 +1,70 @@
+/*---default---*/
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+}
+
+body canvas {
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+}
+body nav {
+  width: 100vw;
+  height: 30px;
+  background-color: transparent;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav .score {
+  width: 70px;
+  margin-right: 5px;
+}
+body nav .heart {
+  width: 75px;
+  margin-left: 5px;
+}
+body .hide {
+  display: none;
+}
+body footer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/splash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+body footer button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-image: url("../img/start.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=index.css.map */

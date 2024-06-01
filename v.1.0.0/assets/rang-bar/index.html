@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="./css/index.css" />
+<script src="./js/index.js"></script>
+
+<style>
+    .a {
+        /*        background-color: blue;*/
+    }
+
+</style>
+
+<my-rang data-value='90' data-text="90"></my-rang>
+
+<my-rang id="r1" data-class="a" data-size="3" data-icon="./img/img-1.png" data-value='70' data-text="123"></my-rang>
+
+
+
+<br />
+<button onclick="fn1()">value oxu</button>
+<button onclick="fn2()">value deyis</button>
+
+<button onclick="fn5()">text oxu</button>
+<button onclick="fn6()">text deyis</button>
+
+<button onclick="fn3()">icon url oxu</button>
+<button onclick="fn4()">icon url deyis</button>
+
+<script>
+    function fn1(i = 80) {
+        const r = document.querySelector('#r1')
+        var k = r.setValue()
+
+        console.log(k)
+    }
+
+    function fn2(i = 0) {
+        const r = document.querySelector('#r1')
+        var k = r.setValue(50)
+
+        console.log(k)
+    }
+
+    function fn5(i = 0) {
+        const r = document.querySelector('#r1')
+        var k = r.setText()
+
+        console.log(k)
+    }
+
+    function fn6(i = 0) {
+        const r = document.querySelector('#r1')
+        var k = r.setText(70)
+
+        console.log(k)
+    }
+
+    function fn3(i = 0) {
+        const r = document.querySelector('#r1')
+        var k = r.setIcon()
+
+        console.log(k)
+
+    }
+
+    function fn4(i = 0) {
+        const r = document.querySelector('#r1')
+        var k = r.setIcon('https://0hazircavab.000webhostapp.com/DaVinciWeb/img/menu.png')
+
+        console.log(k)
+
+    }
+
+</script>

@@ -1,0 +1,69 @@
+@font-face {
+  font-family: text-rang-coin;
+  src: url("../font/GlueGun-GW8Z.ttf");
+}
+@keyframes coin {
+  0% {
+    background-image: url("../img/img-1.png");
+  }
+  17% {
+    background-image: url("../img/img-2.png");
+  }
+  34% {
+    background-image: url("../img/img-3.png");
+  }
+  51% {
+    background-image: url("../img/img-4.png");
+  }
+  68% {
+    background-image: url("../img/img-5.png");
+  }
+  85% {
+    background-image: url("../img/img-6.png");
+  }
+  100% {
+    background-image: url("../img/img-7.png");
+  }
+}
+.friends-rang-coin {
+  width: 100px;
+  height: 25px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.friends-rang-coin * {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+}
+.friends-rang-coin div {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/img-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  animation-name: coin;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+.friends-rang-coin b {
+  margin-left: 3px;
+  font-family: text-rang-coin;
+  letter-spacing: 1px;
+  color: #00587a;
+}
+
+/*# sourceMappingURL=index.css.map */
