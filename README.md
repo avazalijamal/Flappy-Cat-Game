@@ -7,6 +7,8 @@ Bu layihədə, HTML, CSS və JavaScript istifadə edərək Flappy Cat adlı 2D o
 
 ![Flappy Cat Poster](./presentation/poster.png)
 
+![Flappy Cat Poster](./presentation/presentation.gif)
+
 ## Nələr öyrəndim?
 
 - Oyun mexanikası qurulması: Uçuş və cazibə qüvvəsi
